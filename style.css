@@ -1,0 +1,260 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+    transition: 0.3s;
+
+}
+html {
+    scroll-behavior: smooth;
+}
+span{
+    color: orangered;
+}
+
+section {
+    padding: 90px 0 40px;
+}
+
+.sec-top {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+.sec-top h1 {
+    color: #1c1e22;
+    font-size: 40px;
+}
+.boxs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.boxs .box {
+    width: 30%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background: black;
+    transition: all .50s ease;
+}
+
+
+.h-font {
+    font-size: 36px;
+    color: white;
+    font-weight: 600;
+}
+
+.nav-links {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-left: 40px;
+}
+.nav-links a {
+    color: white;
+}
+.nav-links a:hover {
+    color: orangered;
+}
+
+/* Tampilan Home */
+.hero {
+    padding-top: 15px;
+    background: rgb(37, 37, 37);
+    min-height: 100vh;
+}
+.hero .container {
+    padding: 100px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero .content h4 {
+    color: orangered;
+    font-size: 30px;
+}
+.hero .content h1 {
+    color: white;
+    font-size: 65px;
+    margin: 20px 0 10px;
+}
+.hero .content p {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 70px;
+}
+.zidan-img img {
+    width: 100%;
+    max-width: 530px;
+    height: 530px;
+    border-radius: 25%
+    object-fit: cover;
+    border: 7px solid orangered;
+}
+
+.about {
+    padding: 50px;
+    height: 100vh;
+}
+.about .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about .about-img img {   
+    width: 100%;
+    height: 530px;
+    max-width: 530px;
+    border-radius: 25%;
+    object-fit: cover;
+    border: 7px solid transparent;
+
+
+}
+.about .content {
+    margin-left: 30px;
+}
+.about .content h1 {
+    color: #1c1e22;
+    font-style: 45px;
+    font-size: 50px;
+}
+.about .content h3 {
+    color: #1c1e22;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.about .content p {
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 70px;
+}
+.btn {
+    padding: 11px 26px;
+    color: orangered;
+    border: 2px solid orangered;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all .50s ease;
+}
+.btn:hover {
+    background: orangered;
+    color: white;
+    transform: scale(1.1);
+}
+.logo{
+    width: 10%;
+}
+
+.services {
+    height: 100vh;
+    background-color: #f0f4f9;
+    text-align: center;
+}
+.services .boxs .box {
+    background-color: #fff;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px 0px rgba(128, 112, 22, 0.2);
+    position: relative;
+    top: 0;
+}
+.services .boxs .box:hover {
+    top: -25px;
+}
+.services .boxs .box i {
+    color: orangered;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.services .boxs .box h3{
+    color: #1c1e22;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.services .boxs .box p {
+    color: #444;
+    margin-bottom: 50px;
+}
+
+.portfolio .boxs .box {
+    margin-bottom: 50px;
+    position: relative;
+}
+.portfolio .boxs .box img {
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio .boxs .box .box-hover {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #111111b9;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
+    opacity: 0;
+}
+.portfolio .boxs .box:hover .box-hover {
+    opacity: 1;
+}
+.portfolio .boxs .box .box-hover span {
+    color: #fff;
+    font-size: 25px;
+}
+.contact {
+    background: #f0f4f9;
+}
+.contact form {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contact form input {
+    width: 48%;
+    font-size: 18px;
+    padding: 15px 10px;
+    outline: none;
+    border: 1px solid rgba(128, 112, 22, 0.3);
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.contact form textarea {
+    border: 1px solid rgba(128, 112, 22, 0.3);
+    outline: none;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+}
+.contact form textarea:focus,
+.contact form input:focus{
+    border-color: orangered;
+}
+.contact form button {
+    margin: 40px auto 0;
+    cursor: pointer;
+}
